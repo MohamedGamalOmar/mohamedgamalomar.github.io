@@ -6,9 +6,9 @@ import { Skills } from "@/components/sections/Skills";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
 
-const title = "Mohamed Gamal | Frontend Engineer";
+const title = "Mohamed Gamal | Frontend Engineer | React.js & Vue.js";
 const description =
-  "Mohamed Gamal — Frontend Engineer in Cairo specializing in React.js, Vue.js, TypeScript and modern web applications.";
+  "Mohamed Gamal Omar — Frontend Engineer in Cairo specializing in React.js, Vue.js, TypeScript, Next.js, Nuxt.js and modern web applications.";
 
 export const Route = createFileRoute("/")({
   staticData: { sitemap: true },
@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "google-site-verification", content: "vpXqLBwnsuWd0saTLicJe0xNxnQC3T-4wxXtSoN-67k" },
     ],
+    links: [{ rel: "canonical", href: "https://mohamedgamal-tech.vercel.app/" }],
   }),
   component: Index,
 });

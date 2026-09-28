@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://mohamed-gamal-tech.vercel.app/sitemap.xml
+Sitemap: https://mohamedgamal-tech.vercel.app/sitemap.xml

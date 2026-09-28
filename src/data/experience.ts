@@ -23,7 +23,7 @@ export const timeline: TimelineEntry[] = [
   {
     id: "freelance",
     kind: "work",
-    title: "Frontend Engineer",
+    title: "Frontend Developer",
     organization: "Freelance",
     period: "October 2023 — February 2025",
     description:

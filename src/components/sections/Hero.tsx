@@ -102,7 +102,7 @@ export function Hero() {
             <div className="hero-portrait-frame" aria-hidden="true" />
             <div className="hero-portrait">
               <SmartImage
-                src="/imgs/my-image-tp.png"
+                src="/imgs/about.svg"
                 alt="Portrait of Mohamed Gamal"
                 label="MG"
                 loading="eager"

@@ -28,7 +28,7 @@ export const projects: Project[] = [
       "The official website of Quran Radio in Cairo, offering live radio listening, the Quran as readable text, and much more.",
     image: "/imgs/QuranRadio.png",
     demo: "https://misrquran.gov.eg",
-    technologies: ["Vue.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["Vue.js", "TypeScript", "REST API", "Bootstrap"],
     featured: true,
     caseStudy: {
       overview:
@@ -36,7 +36,7 @@ export const projects: Project[] = [
       problem:
         "Quran Radio needed a modern official platform where listeners could tune in to the live broadcast, follow the daily program schedule, and read the Quran as text — all managed by editors through a maintainable admin system.",
       solution:
-        "Built the platform with Vue.js, TypeScript and Tailwind CSS, centered around a global sticky audio player that keeps playback alive while users browse. A full admin system lets staff manage audio files, recordings, programs and live radio content.",
+        "Built the platform with Vue.js, TypeScript and Bootstrap, centered around a global sticky audio player that keeps playback alive while users browse. A full admin system lets staff manage audio files, recordings, programs and live radio content.",
       features: [
         "Live radio streaming with an auto-updating program schedule based on the Cairo time zone.",
         "Readable Quran text alongside audio recordings.",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     description:
       "The official website of the National Customer Protection Agency, enabling citizens to electronically submit and track complaints about unfair trade practices and product safety.",
     image: "/imgs/CPA.png",
-    technologies: ["Vue.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["Vue.js", "TypeScript", "Tailwind CSS", "REST API", "Umbraco CMS"],
     featured: true,
     caseStudy: {
       overview:
@@ -75,7 +75,7 @@ export const projects: Project[] = [
       problem:
         "The agency needed to move complaint handling online: citizens had to be able to submit complaints about unfair trade practices and product safety electronically, attach evidence, and follow up on their cases without visiting offices.",
       solution:
-        "Built the entire project from scratch with Vue.js, TypeScript and Tailwind CSS — full authentication and authorization, a multi-step complaint submission flow with validation, and tracking pages with filtering, plus informative agency pages and a media center.",
+        "Built the entire project from scratch with Vue.js, TypeScript, REST API and Tailwind CSS — full authentication and authorization, a multi-step complaint submission flow with validation, and tracking pages with filtering, plus informative agency pages and a media center.",
       features: [
         "Full authentication, authorization and profile management.",
         "Multi-step complaint submission form with validation.",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     description:
       "The official ministry website serving both public users and internal employees, covering tenders, vacancies and the media center.",
     image: "/imgs/MCIT.png",
-    technologies: ["Vue.js", "TypeScript", "Tailwind CSS"],
+    technologies: ["Vue.js", "REST API", "Tailwind CSS", "Umbraco CMS"],
     featured: true,
     caseStudy: {
       overview:
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       problem:
         "The ministry needed a single official website serving two audiences — public users and internal employees — with up-to-date tenders, vacancies and media content, and pages that could be printed cleanly for official use.",
       solution:
-        "Built the site with Vue.js, TypeScript and Tailwind CSS, with listing and detail pages for each content type and a global print utility that prints only the required section of a page.",
+        "Built the site with Vue.js, REST API and Tailwind CSS, with listing and detail pages for each content type and a global print utility that prints only the required section of a page.",
       features: [
         "Listing and detail pages for Tenders, Vacancies, Media Center and What's New.",
         "Separate content streams for public users and internal employees.",
@@ -141,14 +141,14 @@ export const projects: Project[] = [
     image: "/imgs/kidskiosk.png",
     demo: "https://kidskiosk.vercel.app/",
     github: "https://github.com/MohamedGamalOmar/KidsKiosk",
-    technologies: ["React.js", "Redux", "Bootstrap", "REST API"],
+    technologies: ["React.js", "Redux", "TypeScript", "Tailwind Css", "REST API"],
     caseStudy: {
       overview:
         "A comprehensive e-commerce platform with a robust admin dashboard for real-time analytics, product management, and order tracking. The platform combines powerful administrative controls with an intuitive customer shopping experience.",
       problem:
         "An online store needs two experiences in one: a simple, intuitive shopping flow for customers, and a powerful back office where admins can see how the store is performing and manage products and orders.",
       solution:
-        "Built the platform with React.js and Redux for predictable state management across the storefront and dashboard, Bootstrap for a clean responsive UI, and a REST API for products, orders and analytics data.",
+        "Built the platform with React.js, TypeScript, and Redux for predictable state management across the storefront and dashboard, Bootstrap for a clean responsive UI, and a REST API for products, orders and analytics data.",
       features: [
         "Customer storefront with an intuitive shopping experience.",
         "Admin dashboard with real-time analytics.",
@@ -173,7 +173,7 @@ export const projects: Project[] = [
     image: "/imgs/linkedin-clone.png",
     demo: "https://linkedin-gemy.firebaseapp.com",
     github: "https://github.com/MohamedGamalOmar/Linkedin-Clone",
-    technologies: ["React.js", "Redux", "Firebase"],
+    technologies: ["React.js", "Redux", "Firebase", "Bootstrap"],
     caseStudy: {
       overview:
         "Social application enabling users to sign in using a Google account and create posts. Users can like posts, add comments, share posts, receive notifications, save posts and view profiles.",
@@ -204,14 +204,14 @@ export const projects: Project[] = [
       "A platform that streamlines patient registration, appointment booking and management for healthcare providers.",
     image: "/imgs/healthcare.png",
     github: "https://github.com/MohamedGamalOmar/healthcare",
-    technologies: ["React.js", "Redux"],
+    technologies: ["Next.js", "React.js", "Tailwind Css"],
     caseStudy: {
       overview:
         "Platform that streamlines patient registration, appointment booking, and management for healthcare providers. Implemented administrative features for scheduling, confirming, and canceling appointments.",
       problem:
         "Healthcare providers need a simple way to register patients and manage appointments, while patients need a straightforward way to book — without manual scheduling overhead.",
       solution:
-        "Built the platform with React.js and Redux, covering patient registration and appointment booking on one side and administrative scheduling tools on the other.",
+        "Built the platform with React.js, Redux and Tailwind Css, covering patient registration and appointment booking on one side and administrative scheduling tools on the other.",
       features: [
         "Patient registration flow.",
         "Appointment booking for patients.",
@@ -227,34 +227,6 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "students-assistant",
-    title: "Students Assistant",
-    description:
-      "An application that helps Computer Science students with programming concepts, study resources and activities such as posts and chats.",
-    image: "/imgs/student_assistant.png",
-    demo: "https://chatbot-gemy.firebaseapp.com/",
-    technologies: [],
-    caseStudy: {
-      overview:
-        "Application designed to assist students of Computer Science with programming concepts, study resources, and other activities such as posts, chats, etc.",
-      problem:
-        "Computer Science students often study alone and lack a single place to get help with programming concepts, find study resources and interact with peers.",
-      solution:
-        "Built an assistant application that combines help with programming concepts and study resources with social activities like posts and chats, so students can learn and collaborate in one place.",
-      features: [
-        "Help with programming concepts.",
-        "Study resources for Computer Science students.",
-        "Posts and chats for student interaction.",
-      ],
-      challenges: [
-        "Combining learning assistance and social features in one coherent experience.",
-      ],
-      results: [
-        "Students get programming help, resources and peer interaction in a single app.",
-      ],
-    },
-  },
-  {
     slug: "quran-player",
     title: "Quran Player and Prayer Timings",
     description:
@@ -262,7 +234,7 @@ export const projects: Project[] = [
     image: "/imgs/quran_mp3.png",
     demo: "https://MohamedGamalOmar.github.io/Quran_MP3/",
     github: "https://github.com/MohamedGamalOmar/Quran_MP3",
-    technologies: [],
+    technologies: ["JavaScript", "REST API"],
     caseStudy: {
       overview:
         "Quran player, prayer times and the remaining time for prayers depending on your location.",
@@ -285,6 +257,35 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "quiz-app",
+    title: "Quiz App",
+    description:
+      "A timed quiz application where an answer must be selected before the timer runs out.",
+    image: "/imgs/prog-quiz-app.png",
+    demo: "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
+    github: "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    caseStudy: {
+      overview:
+        "This app shows a set of questions and an answer must be selected before time runs out.",
+      problem:
+        "A quiz is only challenging under time pressure — the app needed to present programming questions with a per-question timer that forces a decision.",
+      solution:
+        "Built a timed quiz flow where each question comes with a countdown and the player must select an answer before the timer runs out.",
+      features: [
+        "Set of programming questions.",
+        "Per-question countdown timer.",
+        "Answer must be selected before time runs out.",
+      ],
+      challenges: [
+        "Managing the timer lifecycle per question — starting, expiring and advancing cleanly.",
+      ],
+      results: [
+        "A fast-paced quiz experience where every question is answered against the clock.",
+      ],
+    },
+  },
+  {
     slug: "social-app",
     title: "Social App",
     description:
@@ -292,7 +293,7 @@ export const projects: Project[] = [
     image: "/imgs/social_app.png",
     demo: "https://MohamedGamalOmar.github.io/social_app",
     github: "https://github.com/MohamedGamalOmar/social_app",
-    technologies: [],
+    technologies: ["JavaScript", "REST API", "Bootstrap"],
     caseStudy: {
       overview:
         "You can browse posts, register to create posts and comment on other posts, and view profiles.",
@@ -311,35 +312,6 @@ export const projects: Project[] = [
       ],
       results: [
         "A complete social loop: browse, register, post, comment and view profiles.",
-      ],
-    },
-  },
-  {
-    slug: "quiz-app",
-    title: "Quiz App",
-    description:
-      "A timed quiz application where an answer must be selected before the timer runs out.",
-    image: "/imgs/prog-quiz-app.png",
-    demo: "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
-    github: "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
-    technologies: [],
-    caseStudy: {
-      overview:
-        "This app shows a set of questions and an answer must be selected before time runs out.",
-      problem:
-        "A quiz is only challenging under time pressure — the app needed to present programming questions with a per-question timer that forces a decision.",
-      solution:
-        "Built a timed quiz flow where each question comes with a countdown and the player must select an answer before the timer runs out.",
-      features: [
-        "Set of programming questions.",
-        "Per-question countdown timer.",
-        "Answer must be selected before time runs out.",
-      ],
-      challenges: [
-        "Managing the timer lifecycle per question — starting, expiring and advancing cleanly.",
-      ],
-      results: [
-        "A fast-paced quiz experience where every question is answered against the clock.",
       ],
     },
   },

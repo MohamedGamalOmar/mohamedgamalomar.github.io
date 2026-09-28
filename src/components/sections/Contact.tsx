@@ -20,8 +20,7 @@ export function Contact() {
   const validate = () => {
     const next: Errors = {};
     if (values.name.trim().length < 2) next.name = "Please enter your full name.";
-    if (!emailPattern.test(values.email.trim()))
-      next.email = "Please enter a valid email address.";
+    if (!emailPattern.test(values.email.trim())) next.email = "Please enter a valid email address.";
     if (values.message.trim().length < 10)
       next.message = "Please write at least a short message (10+ characters).";
     setErrors(next);
@@ -49,19 +48,19 @@ export function Contact() {
       setStatus("error");
       setStatusMessage(
         !isEmailConfigured()
-          ? `The mail service isn't configured yet. Please email me directly at ${contactInfo.email}.`
-          : `Something went wrong while sending. Please try again or email ${contactInfo.email}.`,
+          ? `The mail service isn't configured yet. Please email me directly at ${contactInfo.email}`
+          : `Something went wrong while sending. Please try again or email ${contactInfo.email}`,
       );
       console.error(error);
     }
   };
 
-  const update = (key: keyof typeof values) => (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    setValues((prev) => ({ ...prev, [key]: event.target.value }));
-    if (errors[key]) setErrors((prev) => ({ ...prev, [key]: undefined }));
-  };
+  const update =
+    (key: keyof typeof values) =>
+    (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      setValues((prev) => ({ ...prev, [key]: event.target.value }));
+      if (errors[key]) setErrors((prev) => ({ ...prev, [key]: undefined }));
+    };
 
   return (
     <section className="section" id="contact">

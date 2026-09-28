@@ -10,14 +10,14 @@ export const socialLinks: SocialLink[] = [
     href: "https://www.linkedin.com/in/mohamed-gamal-omar",
     icon: "linkedin",
   },
-  { label: "GitHub", href: "https://github.com/mohamedgamalomar", icon: "github" },
+  { label: "Email", href: "mailto:mohammedgamal.tech@gmail.com", icon: "mail" },
   { label: "WhatsApp", href: "https://wa.me/201021595806", icon: "whatsapp" },
+  { label: "GitHub", href: "https://github.com/mohamedgamalomar", icon: "github" },
   {
     label: "Codewars",
     href: "https://www.codewars.com/users/MohamedGamalOmar",
     icon: "code",
   },
-  { label: "Email", href: "mailto:mohammedgamal.tech@gmail.com", icon: "mail" },
 ];
 
 export const contactInfo = {
