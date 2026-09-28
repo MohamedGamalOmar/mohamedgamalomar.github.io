@@ -20,6 +20,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "google-site-verification", content: "vpXqLBwnsuWd0saTLicJe0xNxnQC3T-4wxXtSoN-67k" },
     ],
   }),
   component: Index,

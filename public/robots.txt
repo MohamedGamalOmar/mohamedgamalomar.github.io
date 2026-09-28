@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://direct-screen-replay.lovable.app/sitemap.xml
+Sitemap: https://mohamed-gamal-tech.vercel.app/sitemap.xml

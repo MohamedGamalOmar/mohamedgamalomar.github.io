@@ -9,7 +9,7 @@ import {
   type SitemapEntry,
 } from "@/lib/sitemap";
 
-const BASE_URL = "https://direct-screen-replay.lovable.app";
+const BASE_URL = "https://mohamed-gamal-tech.vercel.app";
 
 export const Route = createFileRoute("/sitemap.xml")({
   staticData: { sitemap: false },
