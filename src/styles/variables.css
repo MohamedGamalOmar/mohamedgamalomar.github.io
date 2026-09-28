@@ -1,0 +1,108 @@
+/*
+ * Design system tokens — dark / futuristic / neon.
+ * Every color, radius, shadow and motion value used across the portfolio
+ * is defined here. Components never hardcode raw values.
+ */
+
+:root {
+  /* surfaces */
+  --bg-base: oklch(0.13 0.012 285);
+  --bg-deep: #050507;
+  --bg-raise: #08080d;
+  --bg-elevated: #0b0b12;
+  --surface-card: rgba(12, 12, 20, 0.72);
+  --surface-glass: rgba(18, 18, 30, 0.55);
+
+  /* accents */
+  --neon-purple: #8b5cf6;
+  --neon-violet: #a855f7;
+  --neon-blue: #3b82f6;
+  --neon-cyan: #06b6d4;
+
+  /* text */
+  --text-strong: #f8fafc;
+  --text-body: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  /* borders */
+  --line-purple: rgba(139, 92, 246, 0.15);
+  --line-blue: rgba(59, 130, 246, 0.15);
+  --line-soft: rgba(148, 163, 184, 0.1);
+  --line-strong: rgba(139, 92, 246, 0.38);
+
+  /* gradients */
+  --grad-primary: linear-gradient(120deg, var(--neon-purple), var(--neon-blue));
+  --grad-text: linear-gradient(
+    100deg,
+    #f8fafc 0%,
+    #c4b5fd 42%,
+    #7dd3fc 100%
+  );
+  --grad-line: linear-gradient(
+    180deg,
+    rgba(139, 92, 246, 0) 0%,
+    var(--neon-purple) 18%,
+    var(--neon-blue) 82%,
+    rgba(59, 130, 246, 0) 100%
+  );
+
+  /* shadows & glow */
+  --shadow-card: 0 18px 48px -28px rgba(0, 0, 0, 0.9);
+  --shadow-float: 0 24px 60px -30px rgba(88, 61, 214, 0.55);
+  --glow-purple: 0 0 0 1px rgba(139, 92, 246, 0.25),
+    0 12px 40px -18px rgba(139, 92, 246, 0.55);
+  --glow-blue: 0 0 24px -6px rgba(59, 130, 246, 0.6);
+
+  /* radii */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* layout */
+  --shell-max: 1220px;
+  --shell-pad: 1.25rem;
+  --section-gap: clamp(4.5rem, 9vw, 8.5rem);
+  --nav-height: 64px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 160ms;
+  --t-med: 260ms;
+
+  /* shadcn compatibility tokens (kept so ui primitives stay themed) */
+  --radius: 0.875rem;
+  --background: #050507;
+  --foreground: #f8fafc;
+  --card: #0b0b12;
+  --card-foreground: #f8fafc;
+  --popover: #0b0b12;
+  --popover-foreground: #f8fafc;
+  --primary: #8b5cf6;
+  --primary-foreground: #0b0b12;
+  --secondary: #14141f;
+  --secondary-foreground: #f8fafc;
+  --muted: #14141f;
+  --muted-foreground: #94a3b8;
+  --accent: #1a1a29;
+  --accent-foreground: #f8fafc;
+  --destructive: #f87171;
+  --destructive-foreground: #0b0b12;
+  --border: rgba(139, 92, 246, 0.15);
+  --input: rgba(148, 163, 184, 0.16);
+  --ring: rgba(139, 92, 246, 0.6);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --shell-pad: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --shell-pad: 2.75rem;
+    --nav-height: 72px;
+  }
+}

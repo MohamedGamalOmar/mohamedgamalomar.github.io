@@ -1,0 +1,204 @@
+.projects-featured {
+  display: grid;
+  gap: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r-xl);
+  border: 1px solid var(--line-soft);
+  background: var(--surface-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition:
+    transform var(--t-med) var(--ease-out),
+    border-color var(--t-med) var(--ease-out),
+    box-shadow var(--t-med) var(--ease-out);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-float);
+}
+
+.project-card:hover .smart-image img {
+  transform: scale(1.05);
+}
+
+.project-card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.project-card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 5, 7, 0) 40%,
+    rgba(5, 5, 7, 0.68) 100%
+  );
+  pointer-events: none;
+}
+
+.project-card-flag {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  z-index: 2;
+  padding: 0.28rem 0.7rem;
+  border-radius: var(--r-pill);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f8fafc;
+  background: rgba(8, 8, 13, 0.82);
+  border: 1px solid var(--line-strong);
+  backdrop-filter: blur(6px);
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1.25rem 1.3rem 1.4rem;
+  flex: 1;
+}
+
+.project-card-title {
+  font-size: 1.12rem;
+}
+
+.project-card-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 38px;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-body);
+  transition:
+    color var(--t-fast) var(--ease-out),
+    border-color var(--t-fast) var(--ease-out),
+    transform var(--t-fast) var(--ease-out);
+}
+
+.project-link:hover {
+  color: var(--text-strong);
+  border-color: var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.project-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+.project-link-primary {
+  border-color: var(--line-strong);
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--text-strong);
+}
+
+.project-card-featured .project-card-media {
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 1024px) {
+  .projects-featured {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .projects-featured .project-card-featured:first-child {
+    grid-column: span 2;
+  }
+
+  .projects-featured .project-card-featured:first-child .project-card-media,
+  .projects-featured .project-card-featured:nth-child(2) .project-card-media {
+    aspect-ratio: 16 / 8;
+  }
+
+  .projects-featured .project-card-featured:first-child .project-card-title {
+    font-size: 1.4rem;
+  }
+
+  /* Third featured card becomes a full-width horizontal showcase */
+  .projects-featured .project-card-featured:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .projects-featured .project-card-featured:nth-child(3) .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    align-items: stretch;
+  }
+
+  .projects-featured .project-card-featured:nth-child(3) .project-card-media {
+    aspect-ratio: auto;
+    height: 100%;
+    min-height: 250px;
+    border-bottom: 0;
+    border-right: 1px solid var(--line-soft);
+  }
+
+  .projects-featured
+    .project-card-featured:nth-child(3)
+    .project-card-body {
+    justify-content: center;
+    gap: 0.85rem;
+    padding: 1.6rem 1.75rem;
+  }
+
+  .projects-featured
+    .project-card-featured:nth-child(3)
+    .project-card-title {
+    font-size: 1.3rem;
+  }
+}
+
+.projects-featured > *,
+.projects-grid > * {
+  display: flex;
+  min-width: 0;
+}
+
+.projects-featured > * > .project-card,
+.projects-grid > * > .project-card {
+  width: 100%;
+}
