@@ -79,20 +79,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mohamed Gamal | Frontend Engineer" },
+      { title: "Mohamed Gamal Omar | Frontend Engineer | React.js & Vue.js Developer" },
       {
         name: "description",
         content:
-          "Mohamed Gamal — Frontend Engineer specializing in React.js, Vue.js, TypeScript and modern web applications.",
+          "Mohamed Gamal Omar is a Frontend Engineer in Cairo, Egypt specializing in React.js, Vue.js, TypeScript, Next.js, Nuxt.js and modern web application development.",
       },
-      { name: "author", content: "Mohamed Gamal" },
+      { name: "author", content: "Mohamed Gamal Omar" },
       { name: "theme-color", content: "#050507" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.jpg", type: "image/x-icon" },
+      { rel: "icon", href: "/logo.png", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",

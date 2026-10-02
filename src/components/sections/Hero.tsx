@@ -39,7 +39,7 @@ export function Hero() {
             </motion.span>
 
             <motion.h1 className="hero-name" {...(reduced ? {} : { variants: item })}>
-              Mohamed Gamal{" "}
+              Mohamed Gamal Omar{" "}
               <motion.span className="hero-role" {...(reduced ? {} : { variants: item })}>
                 <span className="hero-role-main">Frontend Engineer</span>{" "}
                 <span className="hero-role-sep" aria-hidden="true" />
@@ -48,8 +48,9 @@ export function Hero() {
             </motion.h1>
 
             <motion.p className="hero-description" {...(reduced ? {} : { variants: item })}>
-              I build responsive, scalable web applications with Vue.js, React.js, TypeScript and
-              Tailwind CSS — turning UI designs into clean, accessible and performant interfaces.
+              I build responsive, scalable web applications with Vue.js, React.js, Next.js, Nuxt.js,
+              TypeScript and Tailwind CSS — turning UI designs into clean, accessible and performant
+              interfaces.
             </motion.p>
 
             <motion.div className="hero-ctas" {...(reduced ? {} : { variants: item })}>
@@ -103,7 +104,7 @@ export function Hero() {
             <div className="hero-portrait">
               <SmartImage
                 src="/imgs/about.svg"
-                alt="Portrait of Mohamed Gamal"
+                alt="Portrait of Mohamed Gamal Omar"
                 label="MG"
                 loading="eager"
               />

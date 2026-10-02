@@ -17,7 +17,7 @@ export const Route = createFileRoute("/projects/$slug")({
         meta: [{ title: "Project not found" }, { name: "robots", content: "noindex" }],
       };
     }
-    const title = `${loaderData.project.title} — Case Study | Mohamed Gamal`;
+    const title = `${loaderData.project.title} — Case Study | Mohamed Gamal Omar`;
     const description = loaderData.project.description;
     return {
       meta: [
@@ -58,9 +58,7 @@ function Block({
         </ul>
       ) : null}
       {!hasContent ? (
-        <p className="case-placeholder">
-          Content for this section is not published yet.
-        </p>
+        <p className="case-placeholder">Content for this section is not published yet.</p>
       ) : null}
     </FadeIn>
   );
@@ -144,11 +142,7 @@ function CaseStudy() {
 
         <nav className="case-nav" aria-label="Project navigation">
           {prev ? (
-            <Link
-              to="/projects/$slug"
-              params={{ slug: prev.slug }}
-              className="case-nav-link"
-            >
+            <Link to="/projects/$slug" params={{ slug: prev.slug }} className="case-nav-link">
               <span className="case-nav-label">Previous project</span>
               <span className="case-nav-title">{prev.title}</span>
             </Link>

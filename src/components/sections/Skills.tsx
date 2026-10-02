@@ -27,12 +27,8 @@ export function Skills() {
       <div className="shell">
         <SectionHeading
           eyebrow="Skills"
-          title={
-            <>
-              The tools I <em>reach for</em>
-            </>
-          }
-          subtitle="Grouped by where they sit in the stack — no invented proficiency scores."
+          title={<>Technical Skills</>}
+          subtitle="Grouped by where they sit in the stack"
         />
 
         <div className="skills-tabs" role="tablist" aria-label="Skill categories">
@@ -42,9 +38,7 @@ export function Skills() {
               type="button"
               role="tab"
               aria-selected={activeTab === tab.id}
-              className={
-                activeTab === tab.id ? "skills-tab skills-tab-active" : "skills-tab"
-              }
+              className={activeTab === tab.id ? "skills-tab skills-tab-active" : "skills-tab"}
               onClick={() => setActiveTab(tab.id)}
             >
               {activeTab === tab.id ? (
@@ -69,7 +63,7 @@ export function Skills() {
                 : {
                     initial: { opacity: 0, y: 14 },
                     whileInView: { opacity: 1, y: 0 },
-                     viewport: viewportReplay,
+                    viewport: viewportReplay,
                     transition: {
                       duration: 0.35,
                       delay: Math.min(index * 0.03, 0.3),
@@ -85,8 +79,8 @@ export function Skills() {
         </ul>
 
         <p className="skills-note">
-          Also comfortable with Agile delivery, Git workflows and Umbraco admin
-          integration on enterprise projects.
+          Also comfortable with Agile delivery, Git workflows and Umbraco admin integration on
+          enterprise projects.
         </p>
       </div>
     </section>

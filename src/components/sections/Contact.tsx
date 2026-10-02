@@ -69,7 +69,7 @@ export function Contact() {
           eyebrow="Contact"
           title={
             <>
-              Let&apos;s Build Something <em>Great</em>
+              Contact <em>Mohamed Gamal</em>
             </>
           }
           subtitle="Open to frontend engineering roles and freelance collaborations."

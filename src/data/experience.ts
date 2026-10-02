@@ -11,12 +11,21 @@ export type TimelineEntry = {
 
 export const timeline: TimelineEntry[] = [
   {
+    id: "e-systematic",
+    kind: "work",
+    title: "Frontend Engineer",
+    organization: "E-Systematic",
+    location: "Heliopolis, Cairo, Egypt",
+    period: "April 2026 — Present",
+    description: "Contributing to the development of LISTA CRM, a comprehensive real estate operating platform that brings leads, contacts, listings, deals, activities, tasks, calendars, analytics, and team management into a unified workspace. The platform supports real estate agents, teams, brokerages, and enterprises throughout the property sales lifecycle, from lead acquisition and follow-ups to deal management and closing. I work on frontend features that enable agents and managers to manage pipelines, property listings, team activities, performance analytics, and connected real estate microsites for property marketing and lead generation, using Vue.js, TypeScript, Pinia, Primevue, Scss and Tailwind CSS."
+  },
+  {
     id: "turndigital",
     kind: "work",
     title: "Frontend Engineer",
     organization: "TurnDigital",
-    location: "Cairo",
-    period: "April 2025 — Present",
+    location: "El Maadi, Cairo",
+    period: "April 2025 — March 2026",
     description:
       "Responsible for building scalable, maintainable front-end architectures for enterprise projects. Specialized in Vue.js, Vuex, Pinia, Tailwind CSS, Umbraco Admin, and Agile methodologies. Collaborated with cross-functional teams to deliver high quality software solutions.",
   },
@@ -32,7 +41,7 @@ export const timeline: TimelineEntry[] = [
   {
     id: "arib",
     kind: "work",
-    title: "Frontend Intern",
+    title: "Frontend Developer Intern",
     organization: "ARIB",
     location: "Nasser City, Cairo",
     period: "July 2024 — August 2024",
@@ -42,9 +51,9 @@ export const timeline: TimelineEntry[] = [
   {
     id: "iti",
     kind: "work",
-    title: "Frontend Trainee",
+    title: "Frontend Developer Trainee",
     organization: "ITI",
-    location: "Shebin El Kom, Menofia",
+    location: "Cairo",
     period: "July 2023 — September 2023",
     description:
       "Developed dynamic web applications using HTML, CSS, JavaScript, Bootstrap, React, and Redux. Built responsive, mobile-first interfaces, ensuring a seamless user experience across devices. Gained in-depth knowledge of React's component-based architecture, state management, and lifecycle.",

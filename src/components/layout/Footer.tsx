@@ -22,7 +22,7 @@ export function Footer() {
           <span>
             © {new Date().getFullYear()} {contactInfo.name}. All rights reserved.
           </span>
-          <span>Built with React, TypeScript and Framer Motion.</span>
+          <span>Built with React, TypeScript and Tailwind Css.</span>
         </div>
       </div>
     </footer>

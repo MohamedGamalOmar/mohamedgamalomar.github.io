@@ -31,7 +31,7 @@ export const skillCategories: SkillCategory[] = [
   {
     id: "other",
     label: "Other",
-    skills: ["Firebase", "GitHub", "Gulp", "Python", "C++"],
+    skills: ["Firebase", "Git/GitHub", "Gulp", "Python", "C++"],
   },
 ];
 

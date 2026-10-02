@@ -22,7 +22,7 @@ export function About() {
           eyebrow="About"
           title={
             <>
-              Interfaces built to <em>scale</em>, not just to ship
+              About <em>Mohamed Gamal</em>
             </>
           }
           subtitle="A short look at how I approach frontend engineering day to day."
@@ -31,19 +31,20 @@ export function About() {
         <div className="about-grid">
           <SlideIn from="left" className="about-lead">
             <p>
-              I&apos;m a <strong>Frontend Engineer</strong> with expertise in building responsive
-              and scalable web applications using Vue.js, React.js, TypeScript, SCSS and Tailwind
-              CSS.
+              Mohamed Gamal Omar is a <strong>Frontend Engineer</strong> based in Cairo,
+              specializing in modern web development with <strong>React.js</strong> and{" "}
+              <strong>Vue.js</strong>.
             </p>
             <p>
-              I turn UI designs into clean, functional and accessible interfaces, with strong
-              expertise in <strong>component-based architecture</strong>,{" "}
-              <strong>state management</strong> and <strong>REST API integration</strong>.
+              He builds responsive and scalable web applications using <strong>TypeScript</strong>,{" "}
+              <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>Nuxt.js</strong> and{" "}
+              <strong>Tailwind CSS</strong>.
             </p>
             <p>
-              I&apos;m experienced in optimizing UI performance, improving code quality and
-              collaborating effectively with backend teams — and dedicated to writing maintainable
-              code while staying current with modern frontend best practices.
+              His frontend engineering experience includes{" "}
+              <strong>component-based architecture</strong>, <strong>state management</strong>,{" "}
+              <strong>REST API integration</strong>, <strong>responsive web design</strong>,
+              <strong> accessibility</strong> and <strong>performance optimization</strong>.
             </p>
 
             <div className="about-stack">

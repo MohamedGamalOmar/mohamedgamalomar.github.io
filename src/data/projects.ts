@@ -171,7 +171,7 @@ export const projects: Project[] = [
     description:
       "A social application where users sign in with Google, create posts, like, comment, share, save posts and view profiles.",
     image: "/imgs/linkedin-clone.png",
-    demo: "https://linkedin-gemy.firebaseapp.com",
+    demo: "https://linkedin-clone-r.vercel.app",
     github: "https://github.com/MohamedGamalOmar/Linkedin-Clone",
     technologies: ["React.js", "Redux", "Firebase", "Bootstrap"],
     caseStudy: {
@@ -225,96 +225,7 @@ export const projects: Project[] = [
         "Providers manage their appointment schedule from the admin side.",
       ],
     },
-  },
-  {
-    slug: "quran-player",
-    title: "Quran Player and Prayer Timings",
-    description:
-      "A Quran player with prayer times and the remaining time until the next prayer, based on the visitor's location.",
-    image: "/imgs/quran_mp3.png",
-    demo: "https://MohamedGamalOmar.github.io/Quran_MP3/",
-    github: "https://github.com/MohamedGamalOmar/Quran_MP3",
-    technologies: ["JavaScript", "REST API"],
-    caseStudy: {
-      overview:
-        "Quran player, prayer times and the remaining time for prayers depending on your location.",
-      problem:
-        "Prayer times depend on where you are, so a generic timetable is never quite right — users need timings calculated for their own location, alongside a simple Quran audio player.",
-      solution:
-        "Built a Quran audio player that detects the visitor's location and shows accurate prayer times with a live countdown to the next prayer.",
-      features: [
-        "Quran audio player.",
-        "Prayer times based on the visitor's location.",
-        "Live countdown of the remaining time until the next prayer.",
-      ],
-      challenges: [
-        "Calculating prayer times correctly for any visitor location.",
-        "Keeping the next-prayer countdown accurate in real time.",
-      ],
-      results: [
-        "Visitors see prayer timings that match their actual location, with a live countdown.",
-      ],
-    },
-  },
-  {
-    slug: "quiz-app",
-    title: "Quiz App",
-    description:
-      "A timed quiz application where an answer must be selected before the timer runs out.",
-    image: "/imgs/prog-quiz-app.png",
-    demo: "https://MohamedGamalOmar.github.io/Prog_Quiz_App",
-    github: "https://github.com/MohamedGamalOmar/Prog_Quiz_App",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    caseStudy: {
-      overview:
-        "This app shows a set of questions and an answer must be selected before time runs out.",
-      problem:
-        "A quiz is only challenging under time pressure — the app needed to present programming questions with a per-question timer that forces a decision.",
-      solution:
-        "Built a timed quiz flow where each question comes with a countdown and the player must select an answer before the timer runs out.",
-      features: [
-        "Set of programming questions.",
-        "Per-question countdown timer.",
-        "Answer must be selected before time runs out.",
-      ],
-      challenges: [
-        "Managing the timer lifecycle per question — starting, expiring and advancing cleanly.",
-      ],
-      results: [
-        "A fast-paced quiz experience where every question is answered against the clock.",
-      ],
-    },
-  },
-  {
-    slug: "social-app",
-    title: "Social App",
-    description:
-      "Browse posts, register to create posts, comment on other posts and view profiles.",
-    image: "/imgs/social_app.png",
-    demo: "https://MohamedGamalOmar.github.io/social_app",
-    github: "https://github.com/MohamedGamalOmar/social_app",
-    technologies: ["JavaScript", "REST API", "Bootstrap"],
-    caseStudy: {
-      overview:
-        "You can browse posts, register to create posts and comment on other posts, and view profiles.",
-      problem:
-        "Build a small but complete social application covering the essentials: browsing a feed, registering, posting, commenting and viewing profiles.",
-      solution:
-        "Implemented the full core loop — open browsing for everyone, with registration unlocking post creation and commenting, plus profile pages.",
-      features: [
-        "Browse posts without an account.",
-        "Register to create posts.",
-        "Comment on other people's posts.",
-        "View user profiles.",
-      ],
-      challenges: [
-        "Separating guest browsing from registered-user actions cleanly.",
-      ],
-      results: [
-        "A complete social loop: browse, register, post, comment and view profiles.",
-      ],
-    },
-  },
+  }
 ];
 
 export const getProject = (slug: string) => projects.find((p) => p.slug === slug);

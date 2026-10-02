@@ -59,7 +59,7 @@ export function Navbar() {
         transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
       >
         <nav className="navbar-inner" aria-label="Main navigation">
-          <Link to="/" hash="home" className="navbar-logo" aria-label="Mohamed Gamal — home">
+          <Link to="/" hash="home" className="navbar-logo" aria-label="Mohamed Gamal Omar — home">
             <span className="navbar-logo-mark">MG</span>
             <span className="navbar-logo-dot" aria-hidden="true" />
           </Link>
@@ -71,9 +71,7 @@ export function Navbar() {
                   to="/"
                   hash={section.id}
                   className={
-                    active === section.id
-                      ? "navbar-link navbar-link-active"
-                      : "navbar-link"
+                    active === section.id ? "navbar-link navbar-link-active" : "navbar-link"
                   }
                 >
                   {active === section.id ? (
@@ -145,9 +143,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
               >
                 {section.label}
-                <span className="mobile-menu-link-index">
-                  0{index + 1}
-                </span>
+                <span className="mobile-menu-link-index">0{index + 1}</span>
               </Link>
             ))}
             <div className="mobile-menu-footer">

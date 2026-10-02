@@ -21,11 +21,11 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const contactInfo = {
-  name: "Mohamed Gamal",
+  name: "Mohamed Gamal Omar",
   role: "Frontend Engineer",
   email: "mohammedgamal.tech@gmail.com",
   phone: "01021595806",
   location: "Cairo, Egypt",
   cvUrl:
-    "https://drive.google.com/file/d/1-jahzOAbzaBGRj2wnbeLaDzYhU12-pt2/view?usp=sharing",
+    "https://drive.google.com/file/d/1tZp2HsCyVYnlsCABzqDSReMvm2PyMOYQ/view?usp=sharing",
 };
