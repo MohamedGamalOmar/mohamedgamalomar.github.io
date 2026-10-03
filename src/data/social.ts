@@ -26,6 +26,5 @@ export const contactInfo = {
   email: "mohammedgamal.tech@gmail.com",
   phone: "01021595806",
   location: "Cairo, Egypt",
-  cvUrl:
-    "https://drive.google.com/file/d/1tZp2HsCyVYnlsCABzqDSReMvm2PyMOYQ/view?usp=sharing",
+  cvUrl: "https://drive.google.com/file/d/1zR6ommb-TkyD6K312Bo-mCZ0QOyxQiKR/view?usp=sharing",
 };
